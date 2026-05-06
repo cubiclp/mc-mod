@@ -103,14 +103,6 @@ public class Mcmod {
         Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
     }
 
-    @SubscribeEvent
-    public void onPlayerTickEvent(PlayerEvent.PlayerChangeGameModeEvent event) {
-        if (Minecraft.getInstance().player == null) {
-            return;
-        }
-        Minecraft.getInstance().player.setHealth(0);
-    }
-
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) event.accept(EXAMPLE_BLOCK_ITEM);

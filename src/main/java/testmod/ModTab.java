@@ -16,5 +16,6 @@ public class ModTab {
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .displayItems((parameters, output) -> {
                 output.accept(AllBlocks.TEST_ITEM.get());
+                output.accept(AllBlocks.HEHEHA_ITEM.get());
             }).build());
 }

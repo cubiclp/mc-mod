@@ -14,4 +14,7 @@ public class AllBlocks {
 
     public static final DeferredBlock<Block> TEST_BLOCK = BLOCKS.registerSimpleBlock("test_block", BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops());
     public static final DeferredItem<BlockItem> TEST_ITEM = ITEMS.registerSimpleBlockItem("test_block", TEST_BLOCK);
+
+    public static final DeferredBlock<Block> HEHEHA_BLOCK = BLOCKS.registerSimpleBlock("heheha_block", BlockBehaviour.Properties.of());
+    public static final DeferredItem<BlockItem> HEHEHA_ITEM = ITEMS.registerSimpleBlockItem("heheha_block", HEHEHA_BLOCK);
 }

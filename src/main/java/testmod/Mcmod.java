@@ -82,6 +82,10 @@ public class Mcmod {
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        AllBlocks.BLOCKS.register(modEventBus);
+        AllBlocks.ITEMS.register(modEventBus);
+        ModTab.CREATIVE_MODE_TABS.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
